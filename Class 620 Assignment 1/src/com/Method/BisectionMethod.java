@@ -4,15 +4,13 @@ package com.Method;
 public class BisectionMethod {
 
 	private static final double EPSILON = 0;
-	//private static double EXIT_SUCCESS;
-
+	
 	public static void main(String[] args) {
 		
 		double a=0, b=100;
-		//final double EPSILON = 0.00001;
-		
+				
 		System.out.printf("The root is: %.4f",bisection(a,b,EPSILON));
-		//return(EXIT_SUCCESS);
+		
 	}
 
 	public static double bisection(double a, double b, double ePSILON) {
@@ -47,7 +45,7 @@ public class BisectionMethod {
 	
 	private static double f(double x){
 		
-		return Math.pow(x, 2)-5;
+		return Math.pow(x, 2) - 5;
 	}
 	
 }
