@@ -11,7 +11,7 @@ public class BisectionMethod {
 		double a=0, b=100;
 		//final double EPSILON = 0.00001;
 		
-		System.out.printf("The root is:",bisection(a,b,EPSILON));
+		System.out.printf("The root is: %.4f",bisection(a,b,EPSILON));
 		//return(EXIT_SUCCESS);
 	}
 
@@ -30,7 +30,7 @@ public class BisectionMethod {
 			return mid;
 		
 		while(f(mid)>EPSILON){
-			System.out.printf("Step: %2i a:%7.41f  b:%7.41f  mid:%7.41f  f(mid):%7.41f\n ",i,a,b,mid,f(mid));
+			System.out.printf("Step: %2d a:%.4f  b:%.4f  mid:%.4f  f(mid):%.4f \n ",i,a,b,mid,f(mid));
 			
 			if(f(a)*f(b) < 0)
 				b = mid;
