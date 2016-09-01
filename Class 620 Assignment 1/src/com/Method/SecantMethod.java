@@ -35,8 +35,7 @@ public class SecantMethod {
 			x1 = x2;				
 			i++;
 		}
-		
-			
+				
 		return x2;
 	}
 	
